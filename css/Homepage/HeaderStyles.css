@@ -1,0 +1,425 @@
+/* start__project */
+
+.container_site {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+
+/* Start Top-Header <======================================================================> */
+
+.top-header {
+    margin-top: 1rem;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navigation ul li:not(:first-child) a {
+    color: var(--color_7d7c7c);
+    font-weight: 500;
+
+}
+
+.navigation ul li:first-child a {
+    color: var(--color_c90000);
+    font-weight: 600;
+}
+
+.navigation ul li:not(:first-child) a:hover {
+    color: var(--color_c90000);
+}
+
+.link_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.link_navigation a {
+    display: flex;
+    border: 1px solid var(--color_c90000);
+    border-radius: 100px;
+    padding: 8px 16px;
+    gap: 10px;
+    transition: all 250ms ease-in 50ms;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link_navigation a:first-child {
+    align-items: start;
+    color: var(--color_c90000);
+
+}
+
+.link_navigation a:last-child {
+    background-color: var(--color_c90000);
+    align-items: end;
+    color: #fff;
+}
+
+.link_navigation a:hover {
+    transform: scale(0.9);
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* End Top-Header <======================================================================> */
+
+
+
+
+/* Start Button-Header <===================================================================> */
+.botton-header {
+    margin-top: 2rem;
+}
+
+.bottom_header_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.content_left_header_bottom {
+    align-self: center;
+    max-width: 80%;
+}
+
+.content_left_header_bottom h1 {
+    color: var(--color_c90000);
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.content_left_header_bottom p {
+    color: var(--color_504f4f);
+    font-weight: 400;
+    max-width: 70%;
+}
+
+.order_food {
+    margin-top: 3rem;
+}
+
+.text_price_order_food {
+    color: var(--color_323232);
+    margin-bottom: 1rem;
+}
+
+.text_price_order_food span:first-child {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text_price_order_food span:last-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.action_order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 80%;
+}
+
+.button_action_order {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    border: 1px solid var(--color-241241);
+    background-color: #fff;
+    box-shadow: 0px 10px 17px 0px var(--color-shadow);
+}
+
+.button_action_order button {
+    width: 24px;
+    height: 24px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.button_action_order span {
+    color: var(--secondary, #FFC300);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button_action_order span::after {
+    content: "";
+    display: inline-block;
+    margin-left: 12px;
+    width: 1px;
+    height: 22px;
+    background-color: var(--color_f1f1f1);
+}
+
+.button_action_order span::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 1px;
+    height: 22px;
+    background-color: var(--color_f1f1f1);
+}
+
+.action_order>button {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    background: var(--color_ffc300);
+    box-shadow: 0px 20px 20px 0px var(--color-shadow);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color_323232);
+}
+
+.action_order>button span {
+    height: 24px;
+    line-height: 24px;
+}
+
+.content_right_header_bottom {
+    position: relative;
+    width: 100%;
+}
+
+.fixed_box_delivery {
+    position: absolute;
+    top: 5rem;
+    left: -6rem;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50px 50px 0px 50px;
+    border: 1px solid var(--color_f1f1f1);
+    background: var(--color_241241);
+
+}
+
+.fixed_box_delivery div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color_323232);
+}
+
+.fixed_box_delivery>span {
+    color: var(--color_7d7c7c);
+    font-weight: 400;
+}
+
+/* End Button-Header <===================================================================> */
+
+
+/* end__project */
+
+@media only screen and (min-width: 1042px) {
+    .action_order {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 882px) {
+    .botton-header {
+        margin-top: 3rem;
+    }
+
+    .fixed_box_delivery {
+        top: -2rem;
+        left: -10rem;
+    }
+
+    .fixed_box_delivery div {
+        font-size: 16px;
+    }
+
+    .fixed_box_delivery div svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .content_left_header_bottom h1 {
+        font-size: 34px;
+        font-weight: 600;
+        max-width: 70%;
+    }
+
+    .button_action_order {
+        padding: 4px 8px;
+        gap: 6px;
+    }
+
+    .button_action_order span::before,
+    .button_action_order span::after {
+        height: 12px;
+    }
+
+    .button_action_order span {
+        font-size: 16px;
+        align-self: center;
+        justify-self: center
+    }
+
+    .button-increase svg,
+    .button-decrease svg {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .action_order {
+        justify-content: start;
+        gap: 1.5;
+    }
+
+    .action_order>button {
+        padding: 12px 18px;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .action_order>button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navigation ul {
+        position: fixed;
+        left: -16rem;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        background-color: var(--color_c90000);
+        padding: 1rem 2rem;
+        max-width: 200px;
+        transition: all 1s;
+        z-index: 1;
+    }
+
+    .navigation ul li:not(:first-child) a {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .navigation ul li:first-child a {
+        color: #fff;
+        font-weight: 400;
+
+    }
+
+    .navigation ul li:not(:first-child) a:hover {
+        color: #fff;
+    }
+
+    .link_navigation {
+        justify-self: center;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        justify-self: flex-end;
+    }
+
+    .close__Menu {
+        color: var(--color_504f4f);
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    .bottom_header_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content_left_header_bottom {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .content_left_header_bottom h1 {
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    .content_left_header_bottom p {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    .order_food_desktop {
+        display: none;
+    }
+
+    .order_food_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .order_food_mobile span:first-child {
+        font-size: 16px;
+    }
+
+    .order_food_mobile span:last-child {
+        font-size: 20px;
+    }
+
+    .text_price_order_food:first-child {
+        font-size: 16px;
+    }
+
+    .fixed_box_delivery {
+        position: static;
+        width: 30%;
+    }
+
+    .action_order>button {
+        padding: 8px 12px;
+    }
+
+    .row_title_section_food h4 {
+        margin: 4rem 0;
+    }
+}
+
+@media only screen and (min-width: 677px) {
+    .order_food_mobile {
+        display: none;
+    }
+}

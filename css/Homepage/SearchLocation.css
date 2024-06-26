@@ -1,0 +1,228 @@
+:root {
+    --color_c90000: #c90000;
+    --color_ffc300: #ffc300;
+    --color_FFD429: #FFD429;
+    --color_fff6a3: #fff6a3;
+    --color_323232: #323232;
+    --color_504f4f: #504f4f;
+    --color_7d7c7c: #7d7c7c;
+    --color_e3e3e3: #e3e3e3;
+    --color_f1f1f1: #f1f1f1;
+    --color_241241: rgba(241, 241, 241, 0.70);
+    --color_shadow: rgba(112, 114, 176, 0.20);
+    --color_FFFDE6: #FFFDE6;
+}
+
+.search_location {
+    margin: 50px 0;
+}
+
+.wrapper_search_location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--color_323232);
+    position: relative;
+    height: 398px;
+}
+
+.wrapper_search_location h6 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--color_fff6a3);
+}
+
+.wrapper_search_location p {
+    color: var(--color_f1f1f1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: .5rem 0 4rem 0;
+
+}
+
+.wrapper_search_location form {
+    width: 45%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background-color: var(--color_ffc300);
+    border-radius: 100px;
+}
+
+.wrapper_search_location form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper_search_location form input::placeholder {
+    color: var(--color_504f4f);
+    font-family: poppins;
+}
+
+.wrapper_search_location form button {
+    display: flex;
+    width: 148px;
+    height: 46px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    background: var(--color_FFFDE6);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.wrapper_search_location form button span {
+    color: var(--color_323232);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wrapper_search_location form button:hover {
+    transform: scale(0.9);
+}
+
+.wrapper_search_location img {
+    max-width: 190px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.wrapper_search_location img:nth-child(4) {
+    left: 0;
+    top: 10%;
+}
+
+.wrapper_search_location img:last-child {
+    bottom: 0;
+    left: 10%;
+}
+
+.search_icon {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .wrapper_search_location img {
+        max-width: 170px;
+
+    }
+
+    .wrapper_search_location h6 {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .wrapper_search_location img {
+        max-width: 130px;
+    }
+
+    .wrapper_search_location h6 {
+        font-size: 36px;
+    }
+
+    .wrapper_search_location form {
+        padding: 16px 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper_search_location h6 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .wrapper_search_location img {
+        max-width: 105px;
+    }
+
+    .wrapper_search_location h6 {
+        font-size: 32px;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .wrapper_search_location p {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .wrapper_search_location form {
+        padding: 16px 10px;
+    }
+
+    .wrapper_search_location form button {
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .wrapper_search_location form input::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .wrapper_search_location form button span {
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper_search_location img:nth-child(4) {
+        top: 3%;
+    }
+
+    .wrapper_search_location h6 {
+        font-size: 24px;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .wrapper_search_location p {
+        font-size: 12px;
+    }
+
+    .wrapper_search_location form {
+        padding: 16px 8px;
+        width: 60%;
+    }
+
+    .wrapper_search_location form button {
+        padding: 0 0;
+        gap: 0;
+        width: 45px;
+        height: 45px;
+    }
+
+    .wrapper_search_location form input::placeholder {
+        font-size: 12px;
+    }
+
+    .wrapper_search_location form button span {
+        display: none;
+    }
+
+    .search_icon {
+        display: block;
+        width: 34px;
+        height: 34px;
+        color: #323232;
+    }
+}
